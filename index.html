@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Cadastro de Campeonato</title>
+  <meta charset="UTF-8">
+  <title>Gerenciador de Campeonatos</title>
 </head>
 <body>
   <h1>Cadastro de Campeonato</h1>
@@ -19,6 +20,29 @@
     <input type="date" id="fim" required />
     <button type="submit">Salvar Campeonato</button>
   </form>
-  <script src="index.js"></script>
+
+  <hr>
+
+  <h1>Cadastro de Partida</h1>
+  <form id="form-partida">
+    <input type="text" id="mandante" placeholder="Time Mandante" required />
+    <input type="text" id="visitante" placeholder="Time Visitante" required />
+    <select id="campeonato" required>
+      <option value="">Selecione o campeonato</option>
+    </select>
+    <button type="submit">Salvar Partida</button>
+  </form>
+
+  <hr>
+
+  <h1>Cadastro de Time</h1>
+  <form id="form-time">
+    <input type="text" id="nome-time" placeholder="Nome do Time" required />
+    <input type="text" id="sigla" placeholder="Sigla (ex: COR, FLU)" required />
+    <button type="submit">Salvar Time</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
