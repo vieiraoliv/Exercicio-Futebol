@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Campeonato</title>
+</head>
+<body>
+  <h1>Cadastro de Campeonato</h1>
+  <form id="form-campeonato">
+    <input type="text" id="nome" placeholder="Nome do Campeonato" required />
+    <select id="categoria">
+      <option value="amador">Amador</option>
+      <option value="profissional">Profissional</option>
+    </select>
+    <select id="tipo">
+      <option value="mata-mata">Mata-mata</option>
+      <option value="pontos-corridos">Pontos Corridos</option>
+    </select>
+    <input type="date" id="inicio" required />
+    <input type="date" id="fim" required />
+    <button type="submit">Salvar Campeonato</button>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
